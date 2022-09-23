@@ -1,0 +1,59 @@
+<div *ngIf="biere" class="row">
+    <div id="zoomIn"
+    class="col s12 m8 offset-m2">
+    <h2 class="header center">{{ biere.name }}</h2>
+    <div id="block-info" 
+    class="card horizontal hoverable">
+      <div class="card-image">
+        <img [src]="biere.image_url">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <table class="bordered">
+            <tbody class="tbody">
+              <tr>
+                <td>Nom :</td>
+                <td>{{ biere.name }}</td>
+              </tr>
+              <tr>
+                <td>Tagline :</td>
+                <td>{{ biere.tagline }}</td>
+              </tr>
+              <tr>
+                <td>Date de création :</td>
+                <td>{{ biere.first_brewed }}</td>
+              </tr>
+              <tr>
+                <td>Alcool :</td>
+                <td>{{ biere.abv  }} %</td>
+              </tr>
+              <tr>
+                <td>Description :</td>
+                <td>{{ biere.description }}</td>
+              </tr>
+              <tr>
+                <td>Accompagnements :</td>
+                <td>
+                  <div *ngFor="let food_pairing of biere.food_pairing">{{ food_pairing }}</div>
+                </td>
+              </tr>
+              <tr>
+                <td>Conseil :</td>
+                <td>{{ biere.brewers_tips }}</td>
+              </tr>
+              <tr>
+                <td>Fabriqué par :</td>
+                <td>{{ biere.contributed_by }}</td>
+              </tr>
+              <div class="card-action">
+                <a id="btn" (click)="goToBiereList()">Retour</a>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <h4 *ngIf='!biere' class="center">Bière inconnue au bataillon ! 😭</h4>
+

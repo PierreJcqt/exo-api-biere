@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding:0;
+  }
+
+ .nav-wrapper {
+    /* font-family: 'Fredericka the Great', cursive; */
+    margin-bottom: 50px;
+}
+
+#nav-app {
+  background-color:black;
+  margin-bottom: 50px;
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 15%;
+  margin-top: 25px;
+  font-family: 'Federo';
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #ffe6ff;
+}
+
+
+.sign:hover {
+
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 
+               0 0 20px aliceblue, 0 0 30px aliceblue, 
+               0 0 40px aliceblue, 0 0 55px aliceblue, 0 0 75px aliceblue;
+
+}
+
+/* iphone */
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 667px) {
+
+  .sign {
+    font-size: 300%;
+    margin-top: 20px;
+  }
+}
+
+
+@media only screen 
+and (device-width : 360px) 
+and (device-height : 780px) {
+
+  .sign {
+    font-size: 300% ;
+  }
+
+}
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) {
+
+  .sign {
+    font-size: 300% ;
+  }
+
+}
+
+
+/* mac book 2020 13'' */
+
+@media only screen 
+and (min-device-width : 800px) 
+and (max-device-width : 1280px) {
+
+  .sign {
+
+    margin-left: 20px;
+  }
+
+  
+}
+
+
+
+
+/* mac book 2020 15'' */
+
+@media only screen 
+and (min-device-width : 900px) 
+and (max-device-width : 1440px) {
+
+  .sign {
+
+    margin-left: 15px;
+  }
+
+}
+
+
+
+
+
+
+

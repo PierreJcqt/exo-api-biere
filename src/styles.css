@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+
+ html, body {
+
+    background-image: url('../src/assets/848563.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+   
+  
+
+  @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
+  html, body {
+
+    overflow-x: hidden;
+    
+  }
+}
+  
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+  html, body {
+
+    overflow-x: hidden;
+    
+  }
+}
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 780px) {
+
+  html, body {
+
+    overflow-x: hidden;
+    
+  }
+}
+
+  @media only screen 
+    and (min-device-width : 428px) 
+    and (max-device-width : 926px) {
+
+      html, body {
+        overflow-x: hidden;
+        
+      }
+
+}
+
+@media only screen 
+    and (min-device-width : 390px) 
+    and (max-device-width : 844px) {
+
+      html, body {
+        overflow-x: hidden;
+        
+      }
+
+    }
+
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+      html, body {
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) {
+
+    html, body {
+      overflow-x: hidden;
+  }
+  }

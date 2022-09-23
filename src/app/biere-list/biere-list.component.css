@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+
+body {
+    margin: 0;
+    padding:0;
+    
+  }
+
+
+#title {
+    font-family: 'Fredericka the Great', cursive;
+    margin-bottom: 50px;
+}
+
+#card-biere {
+  background-color: rgb(255, 255, 255);
+
+}
+
+#card-biere:hover {
+    cursor: pointer; 
+    background-color: aliceblue;
+  }
+
+
+img {
+    max-width : 13%;
+    height: auto;
+    object-fit: cover; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px; 
+ }
+
+
+ .card-content {
+
+    font-family: 'Federo', cursive;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+
+  .card-content p:nth-of-type(2n) 
+  {
+    font-size: 20px;
+    letter-spacing : 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+
+  
+
+
+
+
+
+
+/* Media Queries */
+
+
+  /* Iphone SE/6/7/8 portrait */
+
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 667px) 
+   {
+    
+    .card-content p:nth-of-type(2n) 
+  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-content p:nth-of-type(1n) 
+  { 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  img {
+
+    max-width: 50%;
+  }
+
+ }
+
+/* Iphone paysage */ 
+
+ @media only screen 
+ and (device-width : 667px) 
+ and (device-height : 375px) 
+ and (-webkit-device-pixel-ratio : 2) {
+
+  .card-content p:nth-of-type(2n) 
+  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-content p:nth-of-type(1n) 
+  { 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  img {
+
+    max-width: 50%;
+  }
+ }
+
+
+
+
+ /* Iphone X/11 Pro/13 mini portrait */
+
+ @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 812px) {
+
+
+      .card-content p:nth-of-type(2n) 
+      {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+
+      img {
+
+        max-width: 25%;
+      }
+    }
+
+
+    /* Iphone 12 Mini portrait */
+
+    @media only screen 
+    and (min-device-width : 360px) 
+    and (max-device-width : 780px) {
+
+      .card-content p:nth-of-type(2n) 
+      {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+
+      img {
+
+        max-width: 25%;
+      }
+
+    }
+
+
+
+    /* Iphone 12/13/14 Pro MAx */
+
+    @media only screen 
+    and (min-device-width : 428px) 
+    and (max-device-width : 926px) {
+
+      img {
+
+        max-width: 20%;
+      }
+
+
+    }
+
+/* iphone paysage */
+
+
+    @media only screen 
+    and (device-width : 844px) 
+    and (device-height : 390px) {
+
+      img {
+        max-height: 50%;
+      }
+
+    }
+
+    @media only screen 
+    and (device-width : 812px) 
+    and (device-height : 375px) {
+
+      img {
+        max-height: 50%;
+      }
+
+    }
+
+
+
+    @media only screen 
+    and (device-width : 896px) 
+    and (device-height : 414px) {
+
+      img {
+        max-height: 50%;
+      }
+
+    }
+
+
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 568px) {
+
+
+    }
+
+
+ /* Ipad */
+
+ @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+
+      img {
+
+        max-width: 25%;
+      }
+      .card-content p:nth-of-type(2n) 
+      {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+/* Ipad paysage */
+
+     @media only screen 
+    and (min-device-width : 1024px) 
+    and (max-device-width : 768px) {
+
+
+      img {
+
+        
+        max-height: 100%;
+
+      }
+
+    } 
+
+
+
+
+
+
+
+/* mac book 13'' */
+
+    @media only screen 
+    and (min-device-width : 1280px) 
+    and (max-device-width : 800px) 
+    
+    {
+
+      .card-content p:nth-of-type(2n) 
+      {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+
+    }
+
+
+
+    @media only screen 
+    and (min-device-width : 800px) 
+    and (max-device-width : 1280px) {
+
+    
+      img {
+
+        max-width: 20%;
+      }
+
+      
+      .card-content p:nth-of-type(2n) 
+      {
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+       
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        
+      }
+
+
+    }
+
+
+
+
+
+/* mac book 15'' */
+
+    @media only screen 
+    and (min-device-width : 1440px) 
+    and (max-device-width : 900px) {
+
+
+      .card-content p:nth-of-type(2n) 
+      {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+
+
+    @media only screen 
+    and (min-device-width : 900px) 
+    and (max-device-width : 1440px) {
+
+
+      img {
+
+        max-width: 17%;
+      }
+
+      .card-content p:nth-of-type(2n) 
+      {
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    
+      .card-content p:nth-of-type(1n) 
+      { 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+  }
+    

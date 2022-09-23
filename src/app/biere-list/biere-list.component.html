@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let biere of Biere"  class="col s6 m3">
+            <div (click)="goToBiere(biere)" id="card-biere" class="card small" biereBorderCard> 
+                <div class="card-image" biereHeightCard>  
+                    <img [src]="biere.image_url" heightImageCard/> 
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                      <p> {{ biere.name }} </p>
+                      <p><small> {{ biere.tagline }} </small></p>
+                      <p> {{ biere.abv }} </p>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+ 

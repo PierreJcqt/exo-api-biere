@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+td {
+    font-family: 'Federo', cursive;
+    letter-spacing: 3px;
+    color: black;
+    font-weight: 1000;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+tr :nth-child(1) {
+  font-style: italic;
+}
+
+.header center {
+
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+}
+
+
+h2 {
+
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #ffffff;
+  font-family: 'Philosopher', cursive;
+  font-style: italic;
+  margin-top: -20px;
+  text-decoration: underline solid white;
+  color: white;
+  letter-spacing : normal;
+  letter-spacing : 5px;
+  animation: lumiere 1s infinite linear;
+  text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 42px rgb(230, 18, 124),
+                0 0 77px rgb(230, 18, 124),
+                0 0 100px rgb(230, 18, 124);
+  /* text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 75px; */
+}
+
+@keyframes lumiere {
+  0%{
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px #FF2D95,
+      0 0 77px #FF2D95,
+      0 0 100px #FF2D95;
+  }
+ 50%{
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 100px #FF2D95,
+      0 0 200px #FF2D95,
+      0 0 300px #FF2D95;
+  }
+  
+}
+
+h4 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+
+.card-stacked {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+.card-image {
+
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+#btn {
+	background:linear-gradient(to bottom, #db8925 5%, #db8925 100%);
+	background-color:#db8925;
+	border-radius:8px;
+	display:inline-block;
+    text-shadow: 0px 1px 30px #f0b608;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:21px;
+  font-style: italic;
+	font-family: 'Philosopher', cursive;
+        letter-spacing : normal;
+        letter-spacing : 5px;
+	padding:18px 19px;
+	text-decoration: none;
+  margin-left: -25px;
+}
+#btn:hover {
+	background:linear-gradient(to bottom, #f0b608 5%, #db8925 100%);
+	background-color:#db8925;
+}
+#btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#block-info {
+    
+    background: rgba(250, 244, 244, 0);
+    
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  #zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+  }
+
+
+
+    /* MEDIA QUERIES */
+
+    /* Iphone SE/6/7/8 portrait */
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px)  {
+
+      td {
+
+        letter-spacing: 1.5px;
+        display: flex;
+        flex-direction: column;  
+      }
+
+      h2 {
+
+        margin-top: -30px;
+      }
+
+      #block-info {
+
+         display: flex;
+         flex-direction: column;
+         word-wrap: break-word;
+      }
+
+      .bordered {
+
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .card-image {
+        margin-left: 90px;
+
+      }
+
+
+      #btn {
+
+        margin-left: 60px;
+      }
+    }
+
+
+
+    /* Iphone 12 Mini portrait */
+
+    @media only screen 
+    and (min-device-width : 360px) 
+    and (max-device-width : 780px)  {
+
+     
+
+      td {
+
+        letter-spacing: 1.5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      h2 {
+
+        margin-top: -30px;
+      }
+
+      #block-info {
+
+         display: flex;
+         flex-direction: column;
+         margin-right: -50px;
+        
+
+      }
+
+      .bordered {
+
+        margin-left: -30px;
+        margin-right: -150px;
+        
+      }
+
+      .card-image {
+        margin-left: 90px;
+
+      }
+
+
+      #btn {
+
+        margin-left: 70px;
+      }
+
+    }
+
+
+    @media only screen 
+    and (min-device-width : 428px) 
+    and (max-device-width : 926px) {
+
+      td {
+
+        letter-spacing: 1.5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      h2 {
+
+        margin-top: -30px;
+      }
+
+      #block-info {
+
+         display: flex;
+         flex-direction: column;
+         margin-right: -50px;
+        
+
+      }
+
+      .bordered {
+
+        margin-left: -30px;
+        margin-right: -150px;
+        
+      }
+
+      .card-image {
+        margin-left: 95px;
+
+      }
+
+      .card-action {
+
+        margin-left: 25px;
+      }
+
+
+    }
+
+    
+    @media only screen 
+    and (min-device-width : 390px) 
+    and (max-device-width : 844px) {
+
+      #block-info {
+
+        margin-right: -50px;
+      }
+
+      #btn {
+
+        margin-left: 80px;
+      }
+    }
+
+    @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 896px) {
+
+      
+
+      .card-action {
+
+        margin-left: 20px;
+      }
+
+
+    }
+
+
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 812px) {
+
+      #block-info {
+
+        margin-right: -50px;
+      }
+
+      #btn {
+
+        margin-left: 80px;
+      }
+    }
+    
+
+    
+
+
+/* iphone paysage */
+
+    @media only screen 
+    and (device-width : 667px) 
+    and (device-height : 375px) {
+
+
+      
+      td {
+
+        letter-spacing: 1.2px;
+      }
+      
+      .bordered {
+
+        margin-left: -30px;
+      }
+
+      .card-image {
+        margin-left: 90px;
+
+      }
+
+
+      #btn {
+
+        margin-left: 90px;
+      }
+
+      h2 {
+
+        margin-top: -30px;
+      }
+
+      #block-info {
+
+        display: flex;
+        flex-direction: column;
+
+     }
+
+    }
+
+
+
+
+    /* IPAD */
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+      
+      #btn {
+
+        margin-left: 130px;
+      }
+    }
+
+    @media only screen 
+    and (min-device-width : 1024px) 
+    and (max-device-width : 768px) {
+
+      .card-imge {
+
+        height: 500px;
+      }
+    }
